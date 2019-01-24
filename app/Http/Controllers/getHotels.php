@@ -26,7 +26,7 @@ class getHotels extends Controller
         $xml_cred->setAttribute( "Password", "beht@123" );
 
         $xml_wsaa = $xml->createElement( "wsa:Action","http://TekTravel/HotelBookingApi/HotelSearch" );
-        $xml_wsat = $xml->createElement( "wsa:To","http://api.tbotechnology.in/hotelapi_v7/hotelservice.svc" );
+        $xml_wsat = $xml->createElement( "wsa:To","https://api.tbotechnology.in/hotelapi_v7/hotelservice.svc" );
 
         $xml_hed->appendChild($xml_cred);
         $xml_hed->appendChild($xml_wsaa);
@@ -97,9 +97,9 @@ class getHotels extends Controller
         );
 
 
-        $location = "http://api.tbotechnology.in/hotelapi_v7/hotelservice.svc";
+        $location = "https://api.tbotechnology.in/hotelapi_v7/hotelservice.svc";
         $action = "http://TekTravel/HotelBookingApi/HotelSearch";
-         $client = new \SoapClient("http://api.tbotechnology.in/hotelapi_v7/hotelservice.svc?WSDL", $params);
+         $client = new \SoapClient("https://api.tbotechnology.in/hotelapi_v7/hotelservice.svc?wsdl", $params);
         $resp = $client->__doRequest($request , $location , $action , 2 );
         print_r($resp);
 
