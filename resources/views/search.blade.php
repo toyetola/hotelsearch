@@ -448,7 +448,7 @@
             </div>
         </nav>
     </div>
-    <div class="container" style="margin-top: 100px;">
+    {{--<div class="container" style="margin-top: 100px;">
         <ul class="nav nav-tabs nav-tabs-2">
             <li class="nav-item">
                 <a class="nav-link" href=""><i class="ti-user text-muted mr-0-25"></i> Home</a>
@@ -460,10 +460,10 @@
                 <a class="nav-link" href=""><i class="ti-settings text-muted mr-0-25"></i> Settings</a>
             </li>
             <li class="nav-item">
-                {{--<a class="nav-link disabled" href="#"><i class="ti-alert text-muted mr-0-25"></i> Disabled</a>--}}
+                --}}{{--<a class="nav-link disabled" href="#"><i class="ti-alert text-muted mr-0-25"></i> Disabled</a>--}}{{--
             </li>
         </ul>
-    </div>
+    </div>--}}
     <div class="container" style="margin-top: 40px;">
         <!-- Content -->
         <div class="content-area py-1">
@@ -485,7 +485,7 @@
             <div class="container-fluid">
                 <div class="row text-xs-center">
                     <div class="col-sm-4 text-sm-left mb-0-5 mb-sm-0">
-                        {{date('Y')}} © Squiz
+                        {{date('Y')}} © Test
                     </div>
                     <div class="col-sm-8 text-sm-right">
                         <ul class="nav nav-inline l-h-2">
